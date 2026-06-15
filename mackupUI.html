@@ -1,0 +1,269 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramya Beauty Studio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fff7f8;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#ff4f81,#ff9fb5);
+    color:#fff;
+    text-align:center;
+    padding:70px 20px;
+}
+
+header h1{
+    font-size:48px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 28px;
+    background:#fff;
+    color:#ff4081;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    background:#ffffff;
+    padding:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    text-decoration:none;
+    color:#ff4081;
+    font-weight:bold;
+}
+
+section{
+    padding:60px 8%;
+}
+
+h2{
+    text-align:center;
+    color:#ff4081;
+    margin-bottom:30px;
+}
+
+.services,
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#ff4081;
+    margin-bottom:10px;
+}
+
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+}
+
+.contact{
+    max-width:650px;
+    margin:auto;
+    background:#ffe8ef;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+footer{
+    background:#ff4081;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Ramya Beauty Studio</h1>
+    <p>Creating Elegant Looks for Your Special Moments</p>
+    <a href="#contact" class="btn">Book an Appointment</a>
+</header>
+
+<nav>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>💄 Bridal Makeup</h3>
+            <p>Beautiful bridal transformations with long-lasting makeup.</p>
+        </div>
+
+        <div class="card">
+            <h3>✨ Party Makeup</h3>
+            <p>Stylish and glamorous makeup for parties and events.</p>
+        </div>
+
+        <div class="card">
+            <h3>👑 Reception Makeup</h3>
+            <p>Elegant reception looks tailored to your personality.</p>
+        </div>
+
+        <div class="card">
+            <h3>💇 Hairstyling</h3>
+            <p>Professional buns, curls, braids and modern hairstyles.</p>
+        </div>
+
+        <div class="card">
+            <h3>🥻 Saree Draping</h3>
+            <p>Perfect saree draping for weddings and celebrations.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌸 Saree Pre-Pleating</h3>
+            <p>Neat pre-pleating for a flawless and hassle-free look.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌿 Mehndi</h3>
+            <p>Traditional and modern mehndi designs for every occasion.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+
+    <div class="gallery">
+
+        <div class="card">
+            <img src="https://picsum.photos/600/400?random=1" alt="Bridal Makeup">
+            <h3>Bridal Makeup</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/600/400?random=2" alt="Party Makeup">
+            <h3>Party Makeup</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/600/400?random=3" alt="Reception Makeup">
+            <h3>Reception Makeup</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/600/400?random=4" alt="Hairstyling">
+            <h3>Hairstyling</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/600/400?random=5" alt="Saree Draping">
+            <h3>Saree Draping</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/600/400?random=6" alt="Saree Pre-Pleating">
+            <h3>Saree Pre-Pleating</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/600/400?random=7" alt="Mehndi">
+            <h3>Mehndi</h3>
+        </div>
+
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Ramya</h2>
+
+    <div class="about">
+        <p>
+            Welcome to <strong>Ramya Beauty Studio</strong>, where beauty meets
+            elegance. We specialize in bridal makeup, party makeup, reception
+            makeup, hairstyling, saree draping, saree pre-pleating, and mehndi
+            services. Our mission is to make every client feel confident and
+            radiant on their special day.
+        </p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <div class="contact">
+        <p><strong>Name:</strong> Ramya</p>
+        <p><strong>📞 Mobile:</strong> +91 98765 43210</p>
+        <p><strong>📷 Instagram:</strong> @ramya_makeup_artist</p>
+        <p><strong>📍 Available for Bridal, Reception & Party Bookings</strong></p>
+
+        <a class="btn" href="tel:+919876543210">Call Now</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Ramya Beauty Studio • Beauty • Style • Confidence
+</footer>
+
+</body>
+</html>
+```
